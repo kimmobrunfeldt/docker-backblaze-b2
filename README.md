@@ -23,14 +23,19 @@ b2 authorize_account your-account-id your-application-key
 b2 list-buckets
 ```
 
+**The options explained:**
 
-You can see all the available commands by running:
+* `--rm` Automatically remove the container when it exits
+* `-v $PWD:/root` Map current working directory to /root inside the docker container. Allows reading and writing files between container and host.
+* `-e` Pass environment variable inside the container.
+
+You can see all the available b2 commands by running:
 
 ```
 docker run --rm kimmobrunfeldt/backblaze-b2 b2 --help
 ```
 
-### Using this for backups 
+### Using B2 for backups
 
 *Before using this method you need to take GPG into use: https://www.liquidweb.com/kb/how-do-i-use-gpg/.*
 
