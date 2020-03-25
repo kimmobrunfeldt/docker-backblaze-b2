@@ -53,7 +53,7 @@ Now encrypt the file with gpg: `gpg -c b2-env.sh` and remove the plain text one 
 
 #### Restore file
 
-*You can optionally backup your files by encrypting them with GPG. *
+*You can optionally backup your files by encrypting them with GPG.*
 
 ```bash
 source <(gpg --decrypt b2-env.sh.gpg)
